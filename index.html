@@ -691,8 +691,8 @@
 const PUZZLES = [
   {
     id: 1,
-    title: "The Mini Crossword",
-    type: "Online Puzzle",
+    title: "Puzzle Day Begins",
+    type: "Mini Crossword",
     description: `<p class="narrative-chapter">Chapter 1</p>
     <p class="narrative">At precisely 7:42am on 9 March, Matthew's radio alarm clicked on with the reassuring seriousness of BBC Radio 4.</p>
     <p class="narrative">"…and in local news, residents of Amersham have reported a number of statistically improbable events overnight…"</p>
@@ -710,12 +710,21 @@ const PUZZLES = [
     <p>Once you've completed it, come back here and enter the answer to <strong>5 Down</strong>.</p>`,
     answer: "eased",
     acceptableAnswers: ["eased", "EASED"],
-    hints: []
+    hints: [
+      "1 Across: What is Anthony's Puzzle Day equivalent?",
+      "It's not Kayak Day.",
+      "6 Across: A different clue would be \"A following by a capital city\"",
+      "Italy's capital city.",
+      "7 Across: Think of daffodils.",
+      "8 Across: This is two words.",
+      "The first word is one letter.",
+      "9 Across - this is a dodgy one - it's not really a word. The clue largely relates to the first 4 letters. You also get these on motorways."
+    ]
   },
   {
     id: 2,
-    title: "The Chess Puzzle",
-    type: "Chess",
+    title: "Queuing for the Bus",
+    type: "Chess Puzzle",
     description: `<p class="narrative-chapter">Chapter 2</p>
     <p class="narrative">The crossword done, and feeling distinctly eased into consciousness, Matthew rose with purpose. Puzzle Day required standards. He shaved with actuarial precision, knotted his tie in a sensible half-Windsor, and selected his favourite pair of Doctor Who cufflinks — tiny silver Daleks that looked faintly judgemental.</p>
     <p class="narrative">On his walk to the office, he passed the couple he saw every morning: tall man, cheerful woman, an aura of joint ISA contributions. Except today something felt… adjusted.</p>
@@ -731,15 +740,16 @@ const PUZZLES = [
     answer: "nd2",
     acceptableAnswers: ["nd2", "Nd2", "ND2"],
     hints: [
-      "Look for a move that puts immediate pressure on Black.",
-      "Consider where the Knight on f3 might leap to.",
-      "The Knight can fork two valuable pieces from d2."
+      "Is there a way to block black's attack while opening up an attack of your own?",
+      "Try moving one of the knights.",
+      "The knight on f3.",
+      "Knight is noted with an N, not a K."
     ]
   },
   {
     id: 3,
-    title: "The Quordle",
-    type: "Online Puzzle",
+    title: "Logging On",
+    type: "Quordle",
     description: `<p class="narrative-chapter">Chapter 3</p>
     <p class="narrative">By the time Matthew reached the office, the front door security panel required three attempts and an apologetic cough before accepting his pass. He considered this normal.</p>
     <p class="narrative">But there was nothing normal about the first floor.</p>
@@ -757,16 +767,22 @@ const PUZZLES = [
         → Open the Quordle ↗
       </a>
     </p>
-    <p>In Quordle, you must solve four five-letter words simultaneously. Once you've completed it, come back here and answer the following:</p>
+    <p>In Quordle, you must solve four five-letter words simultaneously. For the purposes of this puzzle, the words are numbered as follows: the <strong>first word</strong> is in the top left grid, the <strong>second word</strong> is in the top right, the <strong>third word</strong> is in the bottom left, and the <strong>fourth word</strong> is in the bottom right.</p>
+    <p style="margin-top: 1rem;">Once you've completed it, come back here and answer the following:</p>
     <p style="margin-top: 1rem;">Take the <strong>1st letter</strong> of the first word, the <strong>2nd letter</strong> of the second word, the <strong>3rd letter</strong> of the third word, and the <strong>4th letter</strong> of the fourth word. What word do these four letters spell?</p>`,
     answer: "hint",
     acceptableAnswers: ["hint", "HINT", "Hint"],
-    hints: []
+    hints: [
+      "The first word (top left) is HAVOC.",
+      "The second word (top right) is VIRUS.",
+      "The third word (bottom left) is PANIC.",
+      "The fourth word (bottom right) is DEATH."
+    ]
   },
   {
     id: 4,
-    title: "The Connections",
-    type: "Online Puzzle",
+    title: "The Wellbeing Room",
+    type: "Connections",
     description: `<p class="narrative-chapter">Chapter 4</p>
     <p class="narrative">As alarming as spontaneous age-rating was, the real terror was that there was no hint of what was causing it.</p>
     <p class="narrative">In the chaos, Matthew finally noticed Amy at her desk.</p>
@@ -807,8 +823,8 @@ const PUZZLES = [
   },
   {
     id: 5,
-    title: "The Contexto",
-    type: "Online Puzzle",
+    title: "Glowing Grid",
+    type: "Contexto",
     description: `<p class="narrative-chapter">Chapter 5</p>
     <p class="narrative">Mark immediately raised both hands in surrender. "Not me. I hate roll and move games like Jumanji."</p>
     <p class="narrative">Amy insisted that she had been too busy looking after Rory to have time for such things. "And he is no devil… at least most of the time."</p>
@@ -839,15 +855,14 @@ const PUZZLES = [
     answer: "spreadsheet",
     acceptableAnswers: ["spreadsheet", "SPREADSHEET", "Spreadsheet"],
     hints: [
-      "Think about what Anthony might have built his engine in.",
-      "It's something you might find in a grid. Matthew suggested Anthony had given it agency.",
-      "Anthony called it a 'spreadsheet-adjacent intelligence layer' — but what was it really?"
+      "Try some words relating to the story.",
+      "Actuaries use these everyday."
     ]
   },
   {
     id: 6,
-    title: "The Countdown Conundrum",
-    type: "Online Puzzle",
+    title: "Ten Billion Percent",
+    type: "Countdown Conundrum",
     description: `<p class="narrative-chapter">Chapter 6</p>
     <p class="narrative">"To demonstrate," Anthony said, fingers trembling with a mixture of fear and hubris, "I'll adjust a minor variable."</p>
     <p class="narrative">He typed Mark's name. Changed his year of birth to 2004.</p>
@@ -874,8 +889,8 @@ const PUZZLES = [
   },
   {
     id: 7,
-    title: "The Sudoku",
-    type: "Online Puzzle",
+    title: "The Code",
+    type: "Sudoku",
     description: `<p class="narrative-chapter">Chapter 7</p>
     <p class="narrative">"Anthony," Amy snapped. "Remember the Code."</p>
     <p class="narrative">Matthew nodded gravely, as Anthony reversed his windfall. "We need to restore natural order. Preferably before lunch."</p>
@@ -902,8 +917,8 @@ const PUZZLES = [
   },
   {
     id: 8,
-    title: "The Threads",
-    type: "Online Puzzle",
+    title: "The Hidden Tab",
+    type: "Threads",
     description: `<p class="narrative-chapter">Chapter 8</p>
     <p class="narrative">"Aha!" Matthew exclaimed at last.</p>
     <p class="narrative">In a hidden tab titled FINAL_FINAL_V12_REAL_THIS_TIME, the decrement rates had been assigned positive feedback weighting via an optimisation loop.</p>
@@ -927,7 +942,7 @@ const PUZZLES = [
   },
   {
     id: 9,
-    title: "The Rendezvous",
+    title: "An Appropriate Destination",
     type: "Meta Puzzle",
     description: `<p class="narrative-chapter">Chapter 9</p>
     <p class="narrative">They refreshed the news page.</p>
@@ -941,7 +956,7 @@ const PUZZLES = [
     <p class="narrative">"Maybe but I've had enough of puzzles for one day. Let's get a drink," Matthew responded.</p>
     <hr style="border:none; border-top: 1px dashed var(--light); margin: 1.5rem 0;">
     <p>The day's puzzles have left behind one final mystery: <strong>where to meet, and when</strong>.</p>
-    <p style="margin-top: 0.75rem;">Puzzles 1 to 7 each have a word or name as their answer. Take the <strong>first letter</strong> of each of those seven answers, in order, and rearrange them to reveal the name of the pub.</p>
+    <p style="margin-top: 0.75rem;">Puzzles 1 to 6 and 8 each have a word or name as their answer. Take the <strong>first letter</strong> of each of those seven answers, in order, and rearrange them to reveal the name of the pub.</p>
     <p style="margin-top: 0.75rem;">The <strong>time</strong> is the answer to Puzzle 7 — the Sudoku. That answer is a four-digit number, and it tells you when to be there.</p>
     <p style="margin-top: 0.75rem;">Enter the pub name below.</p>`,
     answer: "the swan",
@@ -949,12 +964,13 @@ const PUZZLES = [
     hints: [
       "In risk management, an extremely rare and high-impact event has a famous animal name.",
       "Nassim Nicholas Taleb wrote a celebrated book about unpredictable, high-consequence events — and named it after this creature.",
-      "Today has been a day of actuarial tail risk made real. What bird embodies that concept? Add 'The' and you have your pub."
+      "Today has been a day of actuarial tail risk made real. What bird embodies that concept? Add 'The' and you have your pub.",
+      "Do NOT go to the Metro Lounge. Or the Beech House. Think older."
     ]
   },
   {
     id: 10,
-    title: "The End",
+    title: "The Secret Location",
     type: "Epilogue",
     description: `<p class="narrative-chapter">Epilogue</p>
     <p class="narrative">There was only one appropriate destination in Amersham after a day of statistical improbability and black swan events.</p>
